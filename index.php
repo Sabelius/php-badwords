@@ -32,17 +32,19 @@ come lacrime nella pioggia.
     bytes
 </h2>
 
+<?php $censura = $_GET["censura"] ?>
+
 <h1 class="text-center pt-5">Monologo Blade Runner censurato: 
     <h4 class="text-center">
         <?php 
-            echo str_replace("morire", "***", $paragrafo);
+            echo str_replace($censura, "***", $paragrafo);
         ?>
     </h4>
 </h1>
 
 <h2 class="pt-5">Lunghezza paragrafo: 
     <?php 
-        echo strlen(str_replace("morire", "***", $paragrafo)); 
+        echo strlen(str_replace($censura, "***", $paragrafo)); 
     ?> 
     bytes
 </h2>
