@@ -19,12 +19,16 @@ come lacrime nella pioggia.
 
 <h1 class="text-center">Monologo Blade Runner: 
     <h4 class="text-center">
-        <?php echo $paragrafo; ?>
+        <?php 
+            echo $paragrafo; 
+        ?>
     </h4>
 </h1>
 
 <h2 class="pt-5">Lunghezza paragrafo: 
-    <?php echo strlen($paragrafo); ?> 
+    <?php 
+        echo strlen($paragrafo); 
+    ?> 
     bytes
 </h2>
 
@@ -37,7 +41,9 @@ come lacrime nella pioggia.
 </h1>
 
 <h2 class="pt-5">Lunghezza paragrafo: 
-    <?php echo strlen($paragrafo); ?> 
+    <?php 
+        echo strlen(str_replace("morire", "***", $paragrafo)); 
+    ?> 
     bytes
 </h2>
     
