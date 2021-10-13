@@ -17,13 +17,12 @@ E tutti quei momenti andranno perduti nel tempo,
 come lacrime nella pioggia.
 È tempo di morire.''"?>
 
-<h1 class="text-center">Monologo Blade Runner: 
-    <h4 class="text-center">
-        <?php 
-            echo $paragrafo; 
-        ?>
-    </h4>
-</h1>
+<h1 class="text-center">Monologo Blade Runner: </h1>
+<p class="text-center">
+    <?php 
+         echo $paragrafo; 
+    ?>
+</p>
 
 <h2 class="pt-5">Lunghezza paragrafo: 
     <?php 
@@ -34,13 +33,12 @@ come lacrime nella pioggia.
 
 <?php $censura = $_GET["censura"] ?>
 
-<h1 class="text-center pt-5">Monologo Blade Runner censurato: 
-    <h4 class="text-center">
-        <?php 
-            echo str_replace($censura, "***", $paragrafo);
-        ?>
-    </h4>
-</h1>
+<h1 class="text-center pt-5">Monologo Blade Runner censurato: </h1>
+<p class="text-center">
+    <?php 
+        echo str_replace($censura, "***", $paragrafo);
+    ?>
+</p>
 
 <h2 class="pt-5">Lunghezza paragrafo: 
     <?php 
